@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6672979C"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context=".emergency">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:onClick="back"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/back"></Button>
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#16a3d9"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Emergency"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+
+
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#80D1FF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/imageView"
+            android:layout_marginStart="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="stop"
+            android:background="@drawable/round"
+            android:text="Stop">
+        </Button>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginTop="40dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="icon"
+            app:srcCompat="@drawable/alarm1" />
+
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/GridLayout"
+            android:layout_below="@id/stop"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            app:columnCount="2"
+            app:rowCount="1">
+
+            <Button
+                android:id="@+id/goToButton"
+
+                android:layout_margin="10dp"
+                android:background="#1284b8"
+                android:text="I Need Help"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:onClick="etext"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                android:textSize="10sp"
+                app:layout_rowWeight="1"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/button_location"
+                android:layout_margin="10dp"
+                android:background="#1284b8"
+                android:text="Send Location"
+
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/GridLayout2"
+            android:layout_below="@id/GridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:columnCount="2"
+            app:rowCount="1">
+
+            <Button
+                android:id="@+id/chatButton2"
+                android:layout_margin="10dp"
+                android:background="#1284b8"
+                android:text="I want to eat"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:onClick="etext2"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                android:textSize="10sp"
+                app:layout_rowWeight="1"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/chatButton3"
+                android:layout_margin="10dp"
+                android:background="#1284b8"
+                android:text="I want to go to the toilet"
+                android:onClick="etext3"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+
+        <TextView
+            android:id="@+id/text_location"
+            android:layout_below="@+id/GridLayout2"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:text="Current Location"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+</ScrollView>
+</LinearLayout>

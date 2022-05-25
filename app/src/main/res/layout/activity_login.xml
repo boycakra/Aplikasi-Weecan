@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAE3F3"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/weecan" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="  Email"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textColorHint="#000000"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textAlignment="textStart"
+        android:textColorHint="#000000"
+        android:textSize="15dp" />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_botton"
+        android:onClick="LogIn"
+        android:text="@string/common_signin_button_text"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="DAFTAR"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="signUp"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "384303746349",
+    "firebase_url": "https://weecan-68681-default-rtdb.firebaseio.com",
+    "project_id": "weecan-68681",
+    "storage_bucket": "weecan-68681.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384303746349:android:7e81fb536e9ee01f7057a4",
+        "android_client_info": {
+          "package_name": "com.example.weecan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384303746349-n182d58hvk9cenv8e93q2okin11ih0n7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.weecan",
+            "certificate_hash": "0098aaf8a74dcc6423d54093beea42c6cca859e0"
+          }
+        },
+        {
+          "client_id": "384303746349-j7vrl6vpi7s9ggnl1s4bmqvm8jab5gus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGI5LMvygHl0NQOoYnI-WEn7jhYyH4kKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384303746349-j7vrl6vpi7s9ggnl1s4bmqvm8jab5gus.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
